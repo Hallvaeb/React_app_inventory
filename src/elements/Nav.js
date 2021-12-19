@@ -9,8 +9,10 @@ function Nav() {
     }
     return (
         <nav>
-            <h3 className='logo'>Home</h3>
             <ul className='nav-links'>
+                <Link style={navStyle} to="/">
+                    <h1>Home</h1>
+                </Link>
                 <Link style={navStyle} to="/ErikBjorgen">
                     <li>Erik Bjørgen</li>
                 </Link>
@@ -20,9 +22,11 @@ function Nav() {
                 <Link style={navStyle} to="/About">
                     <li>About</li>
                 </Link>
+
             </ul>
         </nav>
     )
 }
 
 export default Nav
+//<h3 className='logo'>Home</h3>
